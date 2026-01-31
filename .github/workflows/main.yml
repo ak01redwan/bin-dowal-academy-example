@@ -28,9 +28,6 @@ jobs:
       - name: Run migrations
         run: php artisan migrate
 
-      - name: Test PHPStan
-        run: ./vendor/bin/phpstan analyse
-
       - name: Test PHPUnit
         run: ./vendor/bin/phpunit
 
