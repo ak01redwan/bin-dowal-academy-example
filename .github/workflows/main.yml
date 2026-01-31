@@ -28,8 +28,8 @@ jobs:
       - name: Run migrations
         run: php artisan migrate
 
-      - name: Test PHPUnit
-        run: ./vendor/bin/phpunit
+      - name: Run tests (Pest)
+        run: ./vendor/bin/pest
 
       - name: Deploy using ssh
         uses: appleboy/ssh-action@v1.1.0
